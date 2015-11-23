@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title> Test Java Script </title>
+	<script type="text/javascript">
+
+	var naam = prompt ( "wat is uw naam?"); 
+	alert ( "welkom" + naam);
+
+	</script>
+</head> 
+<body>
+	<h1> Hallo </h1> 	
+</body> 
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+ <head>
+<title>week 05 - puzzel 05</title>
+<SCRIPT TYPE="text/javascript">
+	function login(){ 
+		// haal gegevens op
+		var username = document.getElementById ( "username").value;
+		var pass = document.getElementById ( "pass").value;
+
+		if(username == ""){ 
+			document.getElementById("message").innerHTML = "voer username in"; 
+		}else { 
+			if(pass==""){ 
+			document.getElementById("message").innerHTML = "Voer wachtwoord in";
+		}else { 
+		if(username==accountUsername) {
+			if(pass==accountPassword){
+			document.getElementById("message").innerHTML = "Ingelogd!";
+		} else { 	
+			document.getElementById("message").innerHTML = "Verkeerd ww";
+		}
+			} else { 	
+			document.getElementById("message").innerHTML = "Verkeerd username";
+			
+		}
+		}
+		}
+		}
+
+</SCRIPT>
+</head>
+<body>
+	<input type="text" id="username" value="Username"/><br/>
+	<input type="password" id="password" value="Password"/><br/>
+<button onclick="login"()">Login</button>
+<p id="message">...</p>
+</body>
+</html>

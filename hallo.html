@@ -1,0 +1,44 @@
+<html>
+ <head>
+<title>week 05 - puzzel 05</title>
+<SCRIPT TYPE="text/javascript">
+	function mogelijkheid1(){
+	var g1 = document.getElementById("getal1").value; 
+	var g2 = document.getElementById("getal2").value;
+	var som = parseInt(g1) + parseInt(g2);  
+
+	if(g1 == ""){
+		document.getElementById("uitkomst").innerHTML = "voer getal 1 in"; 
+	} else { 
+	  if(g2 == ""){ 
+		document.getElementById("uitkomst").innerHTML = "voer getal 2 in"; 
+	} else { 
+		document.getElementById("uitkomst").innerHTML = som; 	
+	
+	} 
+ 
+  }
+
+}
+ 	function mogelijkheid1() {
+ 		var g1 = document.getElementById("getal1").value; 
+		var g2 = document.getElementById("getal2").value;
+
+		if (g1 == "" || ""){ 
+			document.getElementById("uitkomst").innerHTML = "voer EEN getal in";
+		} else { 
+			var som = parseInt(g1) + parseInt(g2);
+			document.getElementById("uitkomst").innerHTML = som; 
+		}
+ 	}
+
+</SCRIPT>
+</head>
+<body>
+	<input type="text" id="getal1" value="5"/><br/>
+	<input type="text" id="getal2" value="2"/><br/>
+<button onclick="mogelijkheid1()">Mogelijkheid 1</button><br/>
+<button onclick="mogelijkheid2()">Mogelijkheid 2</button>
+<p id="uitkomst">...</p>
+</body>
+</html>

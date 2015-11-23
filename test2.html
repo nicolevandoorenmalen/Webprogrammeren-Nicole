@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title> mijn website o yeah </title>
+	<script type="text/javascript">
+
+	// zorgt voor de input uitslagen
+	var aankoopbedrag = parseInt(prompt("Wat is uw aankoopbedrag?"));
+	
+	//vergelijkingen
+	if(aankoopbedrag >= 25.00){
+		alert( " Het totaalbedrag is " + aankoopbedrag + " euro.  Je bestelling wordt gratis bezorgt!"); 
+	}
+
+	if(aankoopbedrag < 25.00 ){
+		var totaalbedrag = aankoopbedrag + 3.95;
+		alert(" Het totaalbedrag incl. bezorgkosten is " +totaalbedrag);  
+	} 
+	
+
+
+	</script>
+</head> 
+<body>
+	<h1> Hallo </h1> 	
+</body> 
+
+</html>
